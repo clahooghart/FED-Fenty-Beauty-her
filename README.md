@@ -54,6 +54,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  <img src="readme-images/Toegankelijkheid.jpeg" width="375px" alt="Bevindingen van de toegankelijkheidstest">
+  ### Formulier
+  
 
 </details>
 
@@ -65,13 +68,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
+  <img src="readme-images/BreakdownschetsFEDhome.jpg" width="375px" alt="breakdown van de hele home pagina">
+  <img src="readme-images/BreakdownschetsFEDcontact.jpg" width="375px" alt="breakdown van de hele contact pagina">
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Breakdownschets FEDmenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/BreakdownschetsFEDwinkelwagen.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
