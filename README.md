@@ -55,9 +55,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   <img src="readme-images/Toegankelijkheid.jpeg" width="375px" alt="Bevindingen van de toegankelijkheidstest">
-  ### Formulier
   
-
+  ### Formulier
+  <img src="readme-images/FED 23-24 - Blok 2 - WCAG checklist_Pagina_1.png" width="375px" alt="WCAG checklist pagina 1">
+  <img src="readme-images/FED 23-24 - Blok 2 - WCAG checklist_Pagina_2.png" width="375px" alt="WCAG checklist pagina 2">
+  <img src="readme-images/FED 23-24 - Blok 2 - WCAG checklist_Pagina_3.png" width="375px" alt="WCAG checklist pagina 3">
+  <img src="readme-images/FED 23-24 - Blok 2 - WCAG checklist_Pagina_4.png" width="375px" alt="WCAG checklist pagina 4">
+  <img src="readme-images/FED 23-24 - Blok 2 - WCAG checklist_Pagina_5.png" width="375px" alt="WCAG checklist pagina 5">
 </details>
 
 
@@ -70,6 +74,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="readme-images/BreakdownschetsFEDhome.jpg" width="375px" alt="breakdown van de hele home pagina">
   <img src="readme-images/BreakdownschetsFEDcontact.jpg" width="375px" alt="breakdown van de hele contact pagina">
+  
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/Breakdownschets FEDmenu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
@@ -88,26 +93,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De afgelopen weken heb ik filmpjes gekeken en oefeningen gemaakt in codepen. Omdat ik best wel lang niet gecodeerd heb hebben de oefeningen  mij wel erg geholpen om het weer op te frissen.
+  
+  Typografie oefening:
+   <img src="readme-images/typografie.png" width="375px" alt="Typografie oefening">
 
+  Flexbox oefening:
+  <img src="readme-images/flexbox.png" width="375px" alt="Flexbox oefening">
+  <img src="readme-images/flexbox2.png" width="375px" alt="Flexbox oefening2">
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  Grid oefening:
+  <img src="readme-images/grid.png" width="375px" alt="Grid oefening">
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+   Ook heb ik mijn breakdownschets gemaakt. Ik heb een aantal kleine dingen aangepast over hoe ik dus niet meerdere H1's kan maken. Per pagina mag je maar 1 H1 en ik had er meerderen. Deze heb ik vervangen voor H2's. Voor de rest was de feedback wel positief over de breakdownschets. Ik ben zelf nog een beetje onzeker of ik wel zo'n complexe website zou kunnen coderen en of het haalbaar was voor de blauwe piste. De docent heeft mij verteld dat het wel gewoon te doen is dus ik zal mijn best doen.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Artiekelen mogen in secties en andersom. 
+  - Let op dat je begint met custom properties.
+  - In de oefeningen staat 80% van code die je nodig hebt voor je site.
+  - Verrander de H1s naar H2 en zet een H1 op hidden.
 
 </details>
 
@@ -121,26 +127,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Hier ben ik begonnen met het schrijven van mijn HTML. Ik heb geprobeerd om de navigatie de coderen. 
+  <img src="readme-images/HTMLvoortgang.png" width="375px" alt="De homepagina gecodeerd met HTML">
+  
+  De HTML code: 
+  <img src="readme-images/codevg1.png" width="375px" alt="Gedeelte code html 1">
+  <img src="readme-images/codevg2.png" width="375px" alt="Gedeelte code html 2">
+  <img src="readme-images/codevg3.png" width="375px" alt="Gedeelte code html 3">
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Tip over het stijlen van het hamburger menu met details en summary
+  - Winkelmandje weghalen of met extra tijd doen
+  - Flexbox justify content center gap 0.5 em
+  - a gebruiken in de nav
 
 </details>
 
