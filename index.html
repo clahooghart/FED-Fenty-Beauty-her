@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl,en">
+<html lang="en">
 	
 <head>
 	<meta charset="UTF-8">
@@ -12,89 +12,265 @@
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
-	<h1>Fenty Beauty</h1>
+	<h1 class="sr-only">Fenty Beauty website</h1>
 	<header>
+		<button aria-hidden="true">MENU</button>
 		<nav>
-			<ul>
-				<li> <img src="" alt="Hamburger menu icoon">
-					Hamburger menu
-					<ul>
-						<li>
-							<button>x</button>
-						</li>
-						<li><img src="" alt="Afbeelding van lipgloss">
-							<p>Green Monday Sale</p>
-							<button>-</button>
-							<a href="">Offer Details</a>
-							<a href="">Sale</a>
-						</li>
-						<li><img src="" alt="Afbeelding van gift guide">
-							<p>Gift Guide</p>
-							<button>-</button>
-							<a href="">Gift Guide</a>
-							<a href="">Lip & Lip sets</a>
-							<a href="">Butta Drop Shimmering</a>
-						</li>
-						<li><img src="" alt="Afbeelding van makeup">
-							<p>Makeup</p>
-							<button>-</button>
-							<a href="">Explore Fenty Beauty</a>
-							<a href="">Fenty Beauty Gifts</a>
-							<a href="">Lip</a>
-						</li>
-						<li><img src="" alt="Afbeelding van skincare routine">
-							<p>Skincare</p>
-							<button>-</button>
-							<a href="">Explore Fenty Skin</a>
-							<a href="">Fenty Skin Gifts</a>
-							<a href="">Fenty Skin Start'rs</a>
-						</li>
-					</ul>
-				</li>
-				<li><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285.65 15.79"><path d="m201.03,8.67l1.67-4.58,1.64,4.58h-3.32Zm5.74,6.72l.05.15h3.03l-5.64-15.22-.11-.32h-2.69l-5.75,15.24-.11.3h2.97l1.56-4.24h5.22l1.48,4.09Zm-23.67-2.55h-8.63v-4.07h7.79v-2.67h-7.79v-3.44h8.63V0h-11.38v15.54h11.38v-2.69Zm-30.52,0h-4.14v-4.07h4.07c1.51,0,2.25.67,2.25,2.04,0,1.25-.84,2.03-2.18,2.03m-4.14-10.18h4.01c1.32,0,1.91.53,1.91,1.72,0,1.59-1.42,1.72-1.85,1.72h-4.07v-3.44Zm7.33,4.63c.84-.72,1.34-1.78,1.34-2.89,0-2.68-1.83-4.41-4.66-4.41h-6.76v15.54h6.8c2.95,0,5.02-1.95,5.02-4.74,0-1.56-.61-2.78-1.74-3.49m76.46,2.53c0,2.02-1.27,3.27-3.32,3.27s-3.34-1.29-3.34-3.27V0h-2.73v9.82c0,3.51,2.49,5.96,6.07,5.96s6.07-2.45,6.07-5.96V0h-2.75v9.82Zm16.19-7.16h4.58v12.87h2.75V2.67h4.58V0h-11.91v2.67Zm34.05-2.67l-3.63,6.16-3.49-5.93-.14-.24h-3.2l5.44,8.89v6.64h2.75v-6.64l5.44-8.89h-3.18ZM53.23,10.71V0h-2.73v15.54h2.72l7.08-10.73v10.73h2.75V0h-2.74l-7.09,10.71Zm23.53-8.04h4.58v12.87h2.75V2.67h4.57V0h-11.9v2.67ZM0,15.54h2.75v-6.8h7.3v-2.63H2.75v-3.44h8.14V0H0v15.54Zm24.88,0h11.38v-2.69h-8.63v-4.07h7.79v-2.67h-7.79v-3.44h8.63V0h-11.38v15.54Zm80.92,0h2.75v-6.64l5.44-8.89h-3.18l-3.63,6.16-3.48-5.93-.14-.24h-3.2l5.44,8.89v6.64Z"></path></svg></li>
-				<li> Profiel icoon <img src="" alt="Profiel icoon"> </li>
-				<li> Zoek icoon <svg role="img" aria-labelledby="Search" width="20" height="20" viewBox="0 0 20 20">
-					<title id="Search">Search</title>
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search" x="0" y="0"></use>
-				  </svg><svg role="img" aria-labelledby="Search" width="20" height="20" viewBox="0 0 20 20">
-					<title id="Search">Search</title>
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search" x="0" y="0"></use>
-				  </svg></li>
-				<li>Winkelmandje
-					<img src="" alt="Winkelmandje icoon">
-					<ul>
-						 <li>
-							<p>Your Bag (1)</p>
-							<button>x</button>
-						 </li>
-						 <li>
-							<p>Free shipping on all US orders!</p>
-						</li>
-						<li>
-							<img src="" alt="Afbeelding van lipgloss">
-							<h3>Gloss Bomb Heat Universal Lip Luminizer + Plumper</h3>
-							<p>Hot Chocolit Heat</p>
-							<p>24 EUR</p>
-							<button>- 1 +</button>
-							<button>Remove</button>
-						</li>
-					</ul>
-				</li>
-			</ul>
+			<button aria-hidden="true">CLOSE</button>
+				<ul aria-label="Fenty Beauty menu items">
+							<li>
+								<details>
+								<summary>
+									<img src="images/lipgloss-nav.jpg" alt="">
+									<p>Green Monday Sale</p>
+								</summary>
+								<a href=""><span class="sr-only">Our sale</span>Offer Details</a>
+								<a href=""><span class="sr-only">Fenty Beauty general</span>Sale</a>
+								<a href="">Bestsellers</a>
+								</details>
+							</li>
+							<li>
+								<details>
+								<summary>
+									<img src="images/giftguide-nav.jpg" alt="">
+									<p>Gift Guide</p>
+								</summary>
+								<a href=""><span class="sr-only">All our</span>Gift Guides</a>
+								<a href=""><span class="sr-only">Gift guide for</span>Lip & Lip sets</a>
+								<a href=""><span class="sr-only">Gift guide for</span>Butta Drop Shimmering</a>
+								</details>
+							</li>
+							<li>
+								<details>
+								<summary>	
+									<img src="images/makeup-nav.jpg" alt="">
+									<p>Makeup</p>
+								</summary>
+								<a href="">Explore Fenty Beauty<span class="sr-only">Makeup</span></a>
+								<a href="">Fenty Beauty Gifts</a>
+								<a href="">Lip Products</a>
+								</details>
+							</li> 
+							<li>
+								<details>
+								<summary>
+									<img src="images/fbskin-nav.jpg" alt="">
+									<p>Skincare</p>
+								</summary>
+								<a href="">Explore Fenty Skin</a>
+								<a href="">Fenty Skin Gifts</a>
+								<a href="">Fenty Skin Starters</a>
+								</details>
+							</li>
+				</ul>
 		</nav>
+		<li><img src="images/profiel-nav.png" alt="Account"></li>
+		<li><a href="index.html"><img src="images/fblogo-nav.png" alt="Fenty Beauty logo"></a></li>
+		<li><img src="images/zoek-nav.png" alt="Search"></li>
+		<li><img src="images/winkelmand-nav.png" alt="Shopping bag"></li>
 	</header>
-
 	<main>
+		<section aria-label="Promotion for Fenty Beauty's new skincare products" >
+			<img src="images/nyns-section1.jpg" alt="">
+			<article>
+			<p>NEW YEAR, NEW GLOW</p>
+			<h2 aria-label="NEW PRODUCTS JUST IN FOR YOUR JUICIEST SKIN">JUST IN FOR YOUR JUICIEST SKIN </h2>
+			<p>NEW hydrating, brightening skin + lip care to revive holiday-hungover skin.</p>
+			<a href="">New Arrivals</a>
+			</article>
+		</section>
+		<section>
+			<h2 aria-label="Fenty Faves in Rotation">FENTY FAVES IN ROTATION</h2>
+			<p>Discover everything from bestsellers to new arrivals.</p>
+			<ul aria-label="Popular products you can add to your cart">
+				<li>
+					<img src="images/luxbalm-p.jpg" alt="LUX BALM ULTRA-HYDRATING CHERRY LIP BALM VITAMIN E">
+					<article>
+							<h3>LUX BALM ULTRA-HYDRATING CHERRY LIP BALM + VITAMIN E</h3>
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="5 star rating">
+							<p>€19,90 EUR</p>
+					</article>
+					<button aria-label="Click to add product to your favorites"><img src="images/heart-icon.png" alt=""></button>
+					<button>Add to cart</button>	
+				</li>
+				<li>
+					<img src="images/melontreat-p.jpg" alt="FENTY TREATZ HYDRATING + STRENGTHENING LIP OIL">
+					<article>
+							<h3>FENTY HYDRATING + STRENGTHENING LIP OIL</h3>
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="4 star rating">
+							<p>€29 EUR</p>
+					</article>
+					<button aria-label="Click to add product to your favorites"><img src="images/heart-icon.png" alt=""></button>
+					<button>Add to cart</button>
+				</li>
+				<li>
+					<img src="images/foundation-p.jpg" alt="PRO FILT'R SOFT MATTE LONGWEAR FOUNDATION">
+					<article>
+							<h3>PRO FILT'R SOFT MATTE LONGWEAR FOUNDATION</h3>
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="4 star rating">
+							<p>€38 EUR</p>
+					</article>
+					<button aria-label="Click to add product to your favorites"><img src="images/heart-icon.png" alt=""></button>
+					<button>Add to cart</button>
+				</li>
+				<li>
+					<img src="images/cherry-p.jpg" alt="CHERRY DUB BLAH 2 BRIGHT 5% AHA FACE MASK">
+					<article>
+							<h3>CHERRY DUB BLAH 2 BRIGHT 5% AHA FACE MASK</h3>
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="">
+							<img src="./images/star-li.png" alt="3 star rating">
+							<p>€42 EUR</p>
+					</article>
+					<button aria-label="Click to add product to your favorites"><img src="images/heart-icon.png" alt=""></button>
+					<button>Add to cart</button>
+				</li>
+			</ul>		
+		</section>
+		<article aria-label="List of services that can help you pick the right products">
+			<h2>FENTY HAS YOUR BACK</h2>
+			<p>Our exclusive services will answer all your needs.</p>
+			<ul aria-label="Options of helpful services">
 
-
-
-
-
-		
+				<li>
+					<img src="images/TOS-a.jpg" alt="Try on shades of Fenty Beauty makeup">
+					<h3>TRY ON SHADES</h3>
+				</li>
+				<li>
+					<img src="images/MYM-a.jpg" alt="Meet your perfect match for the right foundation color">
+					<h3>MEET YOUR MATCH</h3>
+				</li>
+				<li>
+					<img src="images/CWE-a.jpg" alt="Chat with experts to help you pick the correct products">
+					<h3>CHAT WITH EXPERTS</h3>
+				</li>
+		</article>
+		<section>
+			<h2>GET A TASTE OF FENTY</h2>
+			<p>Discover new arrivals + limited-edition holiday obsessions.</p>
+			<ul aria-label="List of limited edition holiday products">
+					<li>
+						<img src="images/blush-p2.jpg" alt="DIAMOND BOMB ALL-OVER DIAMOND VEIL BLUSH">
+						<article>
+								<h3>DIAMOND BOMB ALL-OVER DIAMOND VEIL BLUSH</h3>
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="5 star rating">
+								<p>€39 EUR</p>
+						</article>
+						<button aria-label="Click to add product to your favorites"><img src="images/heart-icon.png" alt=""></button>
+						<button>Quick shop</button>
+					</li>
+					<li>
+						<img src="images/butta-p2.jpg" alt="BUTTA DROP WHIPPED OIL BODY CREAM WITH TROPICAL OILS + SHEA BUTTER">
+						<article>
+								<h3>BUTTA DROP WHIPPED OIL BODY CREAM WITH SHEA BUTTER</h3>
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="4 star rating">
+								<p>€36,90 EUR</p>
+						</article>
+						<button aria-label="Click to add product to your favorites"><img src="images/heart-icon.png" alt=""></button>
+						<button>Quick shop</button>
+					</li>
+					<li>
+						<img src="images/lipgloss-p2.jpg" alt="GLOSS BOMB HEAT UNIVERSAL LIP LUMINIZER + PLUMPER">
+						<article>
+								<h3>GLOSS BOMB HEAT UNIVERSAL LIP LUMINIZER + PLUMPER</h3>
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="3 star rating">
+								<p>€24 EUR</p>
+						</article>
+						<button aria-label="Click to add product to your favorites"><img src="images/heart-icon.png" alt=""></button>
+						<button>Quick shop</button>
+					</li>
+					<li>
+						<img src="images/parfum-p2.jpg" alt="FENTY EAU DE PARFUM 500ML">
+						<article>
+								<h3>FENTY EAU DE PARFUM 500 ML SMELL CONFIDENCE</h3>
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="">
+								<img src="./images/star-li.png" alt="5 star rating">
+								<p>€150 EUR</p>
+						</article>
+						<button aria-label="Click to add product to your favorites"><img src="images/heart-icon.png" alt=""></button>
+						<button>Quick shop</button>
+					</li>
+			</ul>		
+		</section>
+		<article aria-label="Rihanna's Fenty brands">
+			<h2>THE FENTY BRANDS</h2>
+			<p>Rihanna's vision for beauty, skincare + fragrance for all.</p>
+			<ul aria-label="List with the Fenty brands">
+				<li>
+					<img src="images/FBmakeup-a2.jpg" alt="Fenty Beauty make up">
+					<h3>FENTY BEAUTY</h3>
+				</li>
+				<li>
+					<img src="images/FBskin-a2.jpg" alt="Fenty Skincare">
+					<h3>FENTY SKIN</h3>
+				</li>
+				<li>
+					<img src="images/FBfragrance-a2.jpg" alt="Fenty Fragrance">
+					<h3>FENTY FRAGRANCE</h3>
+				</li>
+		</article>
 	</main>
-	
+	<footer aria-label="DOWN FOR MORE? WE GOT YOU.">
+		<img src="images/riri-nav.png" alt="">
+		<article>
+		<h2 >DOWN FOR MORE? WE GOT YOU.</h2>
+		<p>All the latest product drops, limited offers, in-store event info-straight to your inbox.</p>
+		<form><span class="sr-only">Apply here for promo subscription in this form</span>
+			<input type="text" name="Phone" id="Phone" placeholder="Phone">
+			<input type="button" value="→">
+			<input type="text" name="Email" id="Email" placeholder="Email">
+			<input type="button" value="→">
+		</form>
+		<p>By subscribing to Fenty Beauty + Fenty Skin, you consent to receive a varying number of marketing messages via email or text. Consent is not a condition of any purchase. Message and data rates my apply. Reply HELP for help or STOP to opt-out. View Terms of Use. California residents: Please also see our Financial Incentive Terms.</p>
+		<details>
+			<summary>CUSTOMER SERVICE</summary>
+				<p>Operating hours are from 9am-9pm EST Monday-Friday and 9am-6pm EST Saturday Reach out today!</p>
+				<a href=""><span class="sr-only">E-mail to contact Fenty Beauty</span>customerservice@fentybeauty.com</a>
+				<a href=""><span class="sr-only">Phone number to contact</span>1-855-440-7474</a>
+				<a href=""><span class="sr-only">Check your</span>Order Status</a>
+				<a href="">Shipping Information</a>
+				<a href="">Returns</a>
+				<a href="/contact.html">Contact Us</a>
+				<a href="">Help & FAQs</a>
+				<a href="">My Account</a>
+				<a href=""><span class="sr-only">Check your</span>Gift Card Balance</a>
+		</details>
+		<details>
+			<summary>ABOUT</summary>
+			<p>Rihanna was inspired to create Fenty Beauty & Fenty Skin after years of experimenting with the best-of-the-best in beauty—and still seeing a void in the industry for products that performed across all skin types and tones.</p>
+				<a href="">About Fenty Beauty</a>
+				<a href="">About Fenty Skin</a>
+				<a href="">Clara Lionel Foundation</a>
+				<a href="">Student Discounts</a>
+				<a href="">Career</a>
+		</details>
+		</article>
+	</footer>
 
 	<script defer src="scripts/script.js"></script>
+	
 </body>
 	
 </html>

@@ -169,31 +169,52 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb mijn HTML van beiden pagina's afgemaakt alleen moet dus nog best veel doen aan de styling. Ik had in de vakantie niet kunnen werken aan school, omdat ik erg ziek was geworden dus kon niet veel voortgang laten zien tijdens het laatste voortgangsgesprek. Wel heb ik goeie feedback gekregen over dat ik de screenreader tag moet gebruiken in de HTML en moet focussen op de toegankelijkheid voor de toegankelijkheidstest. Dit is belangrijk voor bij de beoordeling dus daar ga ik nu aanwerken en dan de styling van de webpagina. 
 
+  Homepagina:
+  Dit is hoe de complete homepagina eruit ziet voor nu ik heb de afbeeldingen en fonts kunnen toevoegen maar de pagina moet dus nog wel met CSS gestijld en gepositsioneerd  worden.
+  <img src="readme-images/HTMLvoortgang2.png" width="375px" alt="De homepagina gecodeerd met HTML">
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  HTML van homepagina:
+  Ik had als feedback gekregen dat ik niet voor alle afbeeldingen een alt moet gebruiken. Dit zei mijn docent omdat als de screenreader de afbeelding voorleest en het is gewoon bedoeld als opmaak van de website kan dit verwarrend zijn voor een blind persoon. Blinden kunnen dan denken dat de tekst bedoeld is voor de afbeelding terwijl sommige afbeeldingen niets te maken hebben met de content. Ook zou ik screenreader tags moeten toevoegen aan de HTML.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  <img src="readme-images/codevg4.png" width="375px" alt="Gedeelte code html 1">
+  <img src="readme-images/codevg5.png" width="375px" alt="Gedeelte code html 2">
+  <img src="readme-images/codevg6.png" width="375px" alt="Gedeelte code html 3">
+  <img src="readme-images/codevg7.png" width="375px" alt="Gedeelte code html 4">
+  <img src="readme-images/codevg8.png" width="375px" alt="Gedeelte code html 5">
+  <img src="readme-images/codevg9.png" width="375px" alt="Gedeelte code html 6">
 
+  Contactpagina: 
+  Dit is hoe de contactpagina eruit ziet voor nu het is een korte pagina met een werkend formulier. Ik zou dus alleen nog dit werkend moeten maken.
+  <img src="readme-images/HTMLvoortgang3.png" width="375px" alt="De contactpagina gecodeerd met HTML">
+
+  HTML van contactpagina:
+  <img src="readme-images/codevg10.png" width="375px" alt="Gedeeelte code HTML contactpagina">
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Leesbare site met de screenreader
+  - Wat hoor ik bij de HTML
+  - Letten op afbeelding alt screenreader
+  - Class met screenreader only
+  - Custom properties gebruiken
 
 </details>
 
 
+## Voortgang
+De voortgang die ik de afgelopen paar dagen gemaakt heb heeft dus te maken met de css stijling. Ik heb hier dus de pagina's afgemaakt. Ik moet dus wel de overige surface plane elemneten toepassen en dat ga ik dus nog toepassen met css en javascript regels.
 
+Homepagina:
+<img src="./readme-images/index-html.png" width="375px" alt="De homepagina">
+
+Contactpagina deel 1:
+<img src="./readme-images/contact-html.png" width="375px" alt="De contactpagina">
+
+Contactpagina deel 2:
+<img src="./readme-images/confirmation-html.png" width="375px" alt="De contactpagina met een formulier">
 
 
 ## Eindgesprek (week 5)

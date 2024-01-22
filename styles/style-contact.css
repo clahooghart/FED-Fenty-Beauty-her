@@ -1,0 +1,367 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+@font-face {
+	font-family: 'CrosstenSemiBold';
+	src: url('/fonts/CrosstenSemiBold.woff');
+}
+
+@font-face {
+	font-family: 'CrosstenBook';
+	src: url('/fonts/CrosstenBook.woff');
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: black;
+	--color-textW: white;
+	--color-background: white;
+	--color-footer: black;
+	--color-li-button: black; 
+	--section-color: rgb(112,105,137);
+	--article-color:rgb(243,225,219);
+	--kopjes-font: 'CrosstenSemiBold';
+	--p-font:'CrosstenBook';
+}
+
+/* Hiding class, making content visible only to screen readers but not visually */
+/* "sr" meaning "screen-reader" */
+
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0); 
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;
+  }
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+body {
+	text-align: center;
+	margin: 0;
+  	padding: 0;
+}
+
+h2, h3 {
+	font-family: var(--kopjes-font);
+}
+
+p, a, button {
+	font-family: var(--p-font);
+}
+
+summary {
+	font-family: var(--p-font);
+}
+
+h2, p {
+	text-align: start;
+	margin-left: .30em;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-text);
+	text-transform: capitalize;
+}
+
+header nav ul:nth-of-type(1) {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0;
+}
+
+header {
+    background-color:  var(--color-background);
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%; /* Full width */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 1;
+	padding: 1em;
+	align-items:center;
+	list-style-type: none;
+}
+
+/* MENU open knop*/
+
+header > button {
+	order:-1;
+}
+
+/* SLUIT knop */
+
+nav button {
+	justify-self:start;
+}
+
+/* als menu open is */
+nav.toonMenu {
+	translate:0% 0%;
+  }
+
+
+nav {
+	background-color: var(--color-background);
+	padding:1em;
+	display:grid;
+	align-content:start;
+	position:fixed;
+	overflow: auto;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	translate:-100% 0%;
+	transition:translate .3s;
+}
+
+nav a {
+	background-color: rgb(236,236,236);
+	padding: 1em;
+}
+
+nav a:hover {
+	background-color: rgb(153,153,153);
+}
+
+nav summary {
+	list-style-type: none;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+}
+
+ul {
+	list-style-type: none;
+	position:relative;
+  	list-style: none;
+}
+
+ul li details {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+main button {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+/* CONTACTPAGINA */
+
+h1 {
+	font-family: var(--kopjes-font);
+    font-size: x-large;
+    position: relative;
+    top: 2em;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+}
+
+/*FORM + H1 */
+
+main section:nth-of-type(1) {
+    margin: 0 auto;
+    max-width: 330px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*FORM + TEKST*/
+
+main section:nth-of-type(2) {
+	width: 100%;
+}
+
+/* TEKST */
+
+main article:nth-of-type(1) {
+	border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+	font-size: small
+}
+
+/*FORM*/
+
+main article:nth-of-type(2) {
+	width: 100%;
+}
+
+/*Confirm green*/
+
+main article:nth-of-type(2) p {
+	color: green;
+}
+
+main form {
+	display: flex;
+	flex-direction: column;
+	color: var(--color-text);
+}
+
+main input {
+    background-color: var(--color-background);
+	color: var(--color-text);
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+    font-weight: bold;
+    border: solid 0.5px;
+}
+
+main input[type=submit] {
+	background-color: var(--color-li-button);
+	color: var(--color-textW);
+	margin-top: 2em;
+	text-transform: uppercase;
+}
+
+main select {
+	background-color: var(--color-background);
+    color: var(--color-text);
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+    font-weight: bold;
+    border: solid 0.5px;
+}
+
+
+/*FOOTER*/
+
+footer {
+	background-color: var(--color-footer);
+	color: var(--color-textW);
+	padding-top: 2em;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+
+footer img {
+	align-self: center;
+    width: 70%;
+}
+
+footer article {
+	text-align: start;
+	margin: 2em;
+	margin-top: 1em;
+}
+
+footer h2 {
+	font-size: large;
+}
+
+footer p {
+	margin-bottom: 2em;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    align-items: flex-end;
+}
+
+footer input[type=text] {
+	background-color: var(--color-footer);
+    color: var(--color-textW);
+    padding: 0.75em;
+    width: 100%;
+    border: solid 0.5px;
+    border-radius: 5px;
+}
+
+footer input[type=button] {
+	background-color: transparent;
+    color: var(--color-textW);
+    border: none;
+    width: fit-content;
+    position: relative;
+    top: -2.5em;
+}
+
+input, textarea {
+	font-family:var(--p-font);
+}
+
+
+footer details {
+	padding: 1em;
+    border: 0.5px solid;
+    border-left: none;
+    border-right: none;
+	border-bottom: none;
+}
+
+footer summary {
+	list-style: none;
+	list-style-type: '+'; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--color-textW);
+	cursor: pointer;
+}
+  
+footer summary::after {
+	content: '';
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid var(--color-textW);
+	border-inline: 7px solid transparent;
+	transition: 0.2s;
+  }
+  
+  
+  details[open] > summary::after {
+	transform: rotate(-180deg);
+}
+
+footer details a {
+	text-decoration: underline;
+	color: var(--color-textW);
+	display: flex;
+	flex-direction: column;
+	margin-top: 1em;
+}
+
+/*****************/
+/* CONTACTPAGINA */
+/*****************/
+
