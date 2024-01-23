@@ -13,17 +13,17 @@
 <body>
 	<h1 class="sr-only">Contact page</h1>
 	<header>
-		<button aria-hidden="true">MENU</button>
+		<button aria-hidden="true"><img src="./images/hamburger-nav.png" alt="Open menu"></button>
 		<nav>
 			<button aria-hidden="true">CLOSE</button>
 				<ul aria-label="Fenty Beauty menu items">
 							<li>
-								<details>
+								<details open>
 								<summary>
 									<img src="images/lipgloss-nav.jpg" alt="">
 									<p>Green Monday Sale</p>
 								</summary>
-								<a href=""><span class="sr-only">Our sale</span>Offer Details</a>
+							    <a href=""><span class="sr-only">Our sale</span>Offer Details</a>
 								<a href=""><span class="sr-only">Fenty Beauty general</span>Sale</a>
 								<a href="">Bestsellers</a>
 								</details>
@@ -83,14 +83,14 @@
 				<input type="text" name="email" id="email" placeholder="Email" required>
 				<input type="tel" name="phone" id="phone" placeholder="Phone">
 				<input type="text" name="ordernumber" id="ordernumber" placeholder="Order number">
-				<select id="question" name="question" placeholder="My question is about..." required> <span class="sr-only">Pick what your question is about</span>
+				<select id="question" name="question" placeholder="My question is about..." required><span class="sr-only">Pick what your question is about</span>
 					<option value="My question is about...">My question is about...</option>
 					<option value="productinformation">Product Information</option>
 					<option value="orderstatus">Order Status</option>
 					<option value="myaccount">My account</option>
 					<option value="other">Other</option>
 				</select>
-				<textarea name="Comments (max 5,000 characters)" id="Comments (max 5,000 characters)" cols="30" rows="10" placeholder="Comments (max 5,000 characters)" maxlength="5000"></textarea>
+				<textarea name="Comments (max 5,000 characters)" id="Comments (max 5,000 characters)" cols="30" rows="10" placeholder="Comments (max 5,000 characters)" maxlength="5000" required></textarea>
 				<input type="submit" value="Contact us">
 			</form>
 		</article>

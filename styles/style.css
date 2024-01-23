@@ -66,22 +66,30 @@ summary {
 	font-family: var(--p-font);
 }
 
+
 h2, p {
 	text-align: start;
-	margin-left: .30em;
 }
 
 a {
 	text-decoration: none;
 	color: var(--color-text);
-	text-transform: capitalize;
+	cursor: pointer;
+}
+
+button {
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 header nav ul:nth-of-type(1) {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 0;
+    padding: 0;
+	list-style: none;
+}
+
+header nav ul:nth-of-type(1) li {
+	padding: 1em;
+    border-top: 0.75px solid;
 }
 
 header {
@@ -101,13 +109,18 @@ header {
 /* MENU open knop*/
 
 header > button {
-	order:-1;
+	order: -1;
+    background: none;
+    border: none;
+	background-image: url();
 }
 
 /* SLUIT knop */
 
 nav button {
 	justify-self:start;
+    background: none;
+    border: none;
 }
 
 /* als menu open is */
@@ -134,6 +147,7 @@ nav {
 nav a {
 	background-color: rgb(236,236,236);
 	padding: 1em;
+	text-align: start;
 }
 
 nav a:hover {
@@ -141,7 +155,15 @@ nav a:hover {
 }
 
 nav summary {
-	list-style-type: none;
+	display: flex;
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 0.5em;
+	cursor: pointer;
+}
+
+nav summary img {
+	width: 40%;
 }
 
 nav ul {
@@ -149,14 +171,8 @@ nav ul {
 	flex-direction: column;
 }
 
-ul {
-	list-style-type: none;
-	position:relative;
-  	list-style: none;
-}
 
-ul li details {
-	text-decoration: none;
+nav ul li details {
 	display: flex;
 	flex-direction: column;
 }
@@ -173,107 +189,114 @@ main button {
 }
 
 
+
 /* EERSTE SECTION */
 
 main > section:nth-of-type(1) {
-    height: 650px;
+	height: 40em;
+    width: 100%;
     background-color: var(--section-color);
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 main > section:nth-of-type(1) img {
-	width: 140%;
-    position: relative;
-	top: 2em;
-    right: 3em;
+	width: 100%;
+    position: absolute;
+	top: 3.5em;
 	overflow: hidden;
 }
 
 main > section:nth-of-type(1) article {
-	background-color: var(--section-color);
-	color: var(--color-textW);
-	position:absolute;
-	top: 17em;
-	padding-top: 6em;
-	text-align: left;
-	padding-left: 1em;
+    background-color: var(--section-color);
+    color: var(--color-textW);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    position: relative;
 }
 
 main > section:nth-of-type(1) article p:first-of-type {
-	position: relative;
-	bottom: 4em;
 	font-weight: bold;
+	order: 1;
 }
 
 main > section:nth-of-type(1) article h2 {
-position: relative;
-    bottom: 1.5em;
     font-size: xx-large;
-    text-align: left;
     margin: 0;
+	order: 2;
 }
 
 main > section:nth-of-type(1) article p:last-of-type {
-	position: relative;
-	bottom: 2em;
+	order: 3;
 }
 
 
 main > section:nth-of-type(1) article a {
-    background-color: var(--color-textW);
+	background-color: var(--color-textW);
     padding: 1.5em;
-    position: relative;
-    bottom: 0em;
+    width: 12em;
     text-transform: uppercase;
     font-weight: bold;
     font-size: small;
+	margin-bottom: 1em;
+    order: 4;
 }
 
 /* TWEEDE SECTION */
 
+main > section:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+main > section:nth-of-type(2) article:first-child {
+	margin: 0;
+	margin-left: 1em;
+}
+
+
 main > section:nth-of-type(2) ul  {
     display: flex;
-    width: 100%;
-    list-style: none;
     gap: 2em;
     overflow: scroll;
-	scroll-behavior: smooth;
-    margin-top: 2em;
-	margin-bottom: 2em;
+    scroll-behavior: smooth;
+    margin-bottom: 2em;
 }
 
 main > section:nth-of-type(2) ul li {
-    display: flex;
+	display: flex;
     flex-direction: column;
     width: 60%;
-	height: fit-content;
+	justify-content: space-between;
     position: relative;
-	border: solid var(--section-color) 2px;
 }
 
-main > section:nth-of-type(2) article {
+main > section:nth-of-type(2) ul li article {
     text-align: start;
     position: relative;
     left: 1em;
     font-size: smaller;
     width: 80%;
     top: 1em;
+	margin-bottom: 2em;
 }
 
 main > section:nth-of-type(2) button:first-of-type {
 	background: none;
-    position: relative;
+    position: absolute;
     width: fit-content;
-    bottom: 16em;
-    left: 12em;
+    top: 1em;
+    right: 2em;
     border: none;
 }
 
 main > section:nth-of-type(2) button:last-of-type {
 	background: var(--color-li-button);
     color: var(--color-textW);
-    position: relative;
-    width: auto;
     padding: 2em;
     border: none;
 }
@@ -282,83 +305,124 @@ main > section:nth-of-type(2) button img {
 	width: 150%;
 }
 
+
+/* VIDEO SECTION */
+
+main > section:nth-of-type(3) {
+    width: 100%;
+    background-color: var(--color-footer);
+	color: var(--color-textW);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+main > section:nth-of-type(3) article {
+	color: var(--color-textW);
+    margin: 1em;
+    margin-top: 5em;
+    margin-bottom: 1.5em;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+main > section:nth-of-type(3) article h2 {
+    font-size: large;
+    margin: 0;
+}
+
+main > section:nth-of-type(3) article a {
+	background-color: var(--color-textW);
+    padding: 1.5em;
+    width: 12em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 1em;
+}
+
+
 /* EERSTE ARTICLE  */
 
-main > article:nth-of-type(1) {
-	background-color: var(--article-color);
+main > article:nth-of-type(1) section {
+	margin: 0;
+	margin-left: 1em;
 }
 
 main > article:nth-of-type(1) ul  {
-    display: flex;
-    width: 100%;
-    overflow: auto;
-    list-style: none;
+	display: flex;
     gap: 2em;
     overflow: scroll;
     margin-top: 2em;
-
 }
 
 main > article:nth-of-type(1) ul li {
     display: flex;
     flex-direction: column;
     width: 75%;
-    position: relative;
 }
 
 /* DERDE SECTION  */
 
-main > section:nth-of-type(3) ul  {
+main > section:nth-of-type(4) {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+main > section:nth-of-type(4) article:first-child {
+	margin: 0;
+	margin-left: 1em;
+}
+
+
+main > section:nth-of-type(4) ul  {
     display: flex;
-    width: 100%;
-    list-style: none;
     gap: 2em;
     overflow: scroll;
-	scroll-behavior: smooth;
-    margin-top: 2em;
-	margin-bottom: 2em;
+    scroll-behavior: smooth;
+    margin-bottom: 2em;
 }
 
-main > section:nth-of-type(3) ul li {
-    display: flex;
+main > section:nth-of-type(4) ul li {
+	display: flex;
     flex-direction: column;
     width: 60%;
-	height: fit-content;
+	justify-content: space-between;
     position: relative;
-	border: solid var(--section-color) 2px;
 }
 
-main > section:nth-of-type(3) article {
+main > section:nth-of-type(4) ul li article {
     text-align: start;
     position: relative;
     left: 1em;
     font-size: smaller;
     width: 80%;
     top: 1em;
+	margin-bottom: 2em;
 }
 
-main > section:nth-of-type(3) button:first-of-type {
+main > section:nth-of-type(4) button:first-of-type {
 	background: none;
-    position: relative;
+    position: absolute;
     width: fit-content;
-    bottom: 16em;
-    left: 12em;
+    top: 1em;
+    right: 2em;
     border: none;
 }
 
-main > section:nth-of-type(3) button:last-of-type {
+main > section:nth-of-type(4) button:last-of-type {
 	background: var(--color-li-button);
     color: var(--color-textW);
-    position: relative;
-    width: auto;
     padding: 2em;
     border: none;
 }
 
-main > section:nth-of-type(3) button img {
+main > section:nth-of-type(4) button img {
 	width: 150%;
 }
-
 
 /* TWEEDE ARTICLE  */
 
@@ -366,26 +430,23 @@ main > article:nth-of-type(2) {
 	background-color: var(--article-color);
 }
 
+main > article:nth-of-type(2) section {
+	margin: 0;
+	margin-left: 1em;
+}
 
 main > article:nth-of-type(2) ul  {
-    display: flex;
-    width: 100%;
-    overflow: auto;
-    list-style: none;
-    gap: 1em;
+	display: flex;
+    gap: 2em;
     overflow: scroll;
     margin-top: 2em;
-	margin-bottom: 2em;
-
 }
 
 main > article:nth-of-type(2) ul li {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    position: relative;
+    width: 75%;
 }
-
 
 /*FOOTER*/
 
@@ -459,8 +520,6 @@ footer details {
 }
 
 footer summary {
-	list-style: none;
-	list-style-type: '+'; 
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -478,7 +537,7 @@ footer summary::after {
   }
   
   
-  details[open] > summary::after {
+footer details[open] > summary::after {
 	transform: rotate(-180deg);
 }
 
@@ -490,8 +549,3 @@ footer details a {
 	margin-top: 1em;
 }
   
-
-/*****************/
-/* CONTACTPAGINA */
-/*****************/
-
