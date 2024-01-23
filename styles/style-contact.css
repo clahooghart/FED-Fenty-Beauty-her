@@ -7,12 +7,12 @@
 
 @font-face {
 	font-family: 'CrosstenSemiBold';
-	src: url('/fonts/CrosstenSemiBold.woff') format('woff');
+	src: url('./fonts/CrosstenSemiBold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'CrosstenBook';
-	src: url('/fonts/CrosstenBook.woff') format('woff');
+	src: url('./fonts/CrosstenBook.woff') format('woff');
 }
 
 /*********************/
