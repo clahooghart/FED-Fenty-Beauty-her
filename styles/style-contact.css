@@ -5,6 +5,7 @@
   box-sizing:border-box;  
 }
 
+/*Bron: Crossten Font Family | Download free fonts for desktop & webfonts. (z.d.). https://www.cufonfonts.com/font/crossten*/
 @font-face {
 	font-family: 'CrosstenSemiBold';
 	src: url('../fonts/CrosstenSemiBold.woff') format('woff');
@@ -17,7 +18,9 @@
 
 /*********************/
 /* CUSTOM PROPERTIES */
+/*Bron: Kevin Powell. (2017, 20 december). CSS Variables - an introduction to CSS custom properties [Video]. YouTube. https://www.youtube.com/watch?v=PHO6TBq_auI*/
 /*********************/
+
 :root {
 	/* startje */
 	--color-text: black;
@@ -31,8 +34,9 @@
 	--p-font:'CrosstenBook';
 }
 
-/* Hiding class, making content visible only to screen readers but not visually */
+/* Hiding class, making content visible only to screen readers but not visually * Bron studentenassistent Quincy/
 /* "sr" meaning "screen-reader" */
+/* Bron studentassistent Quincy */
 
 .sr-only:not(:focus):not(:active) {
 	clip: rect(0 0 0 0); 
@@ -47,6 +51,11 @@
 /****************/
 /* JOUW STYLING */
 /****************/
+
+/*Bronnen: CSS guidelines. (2022, 1 september). https://cssguidelin.es/\
+  What the flexbox?! (z.d.). What The Flexbox?! https://flexbox.io/
+ CSS-Tricks. CSS-Tricks. https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/
+*/
 
 body {
 	text-align: center;
@@ -106,7 +115,7 @@ header {
 	list-style-type: none;
 }
 
-/* MENU open knop*/
+/* MENU open knop bron: T’ Hooft, S., [shooft]. (2023). https://codepen.io/shooft/pen/vYvEOQx. codepen. https://codepen.io/shooft/pen/eYbmRLZ */
 
 header > button {
 	order: -1;
@@ -115,7 +124,7 @@ header > button {
 	background-image: url();
 }
 
-/* SLUIT knop */
+/* SLUIT knop bron: T’ Hooft, S., [shooft]. (2023). https://codepen.io/shooft/pen/vYvEOQx. codepen. https://codepen.io/shooft/pen/eYbmRLZ */
 
 nav button {
 	justify-self:start;
@@ -123,7 +132,7 @@ nav button {
     border: none;
 }
 
-/* als menu open is */
+/* Als menu open is bron: T’ Hooft, S., [shooft]. (2023). https://codepen.io/shooft/pen/vYvEOQx. codepen. https://codepen.io/shooft/pen/eYbmRLZ */
 nav.toonMenu {
 	translate:0% 0%;
   }
@@ -229,13 +238,14 @@ main article:nth-of-type(1) {
 	font-size: small
 }
 
-/*FORM*/
-
+/*FORM 
+/*Bron: HTML form attributes. (z.d.). https://www.w3schools.com/html/html_forms_attributes.asp*/
+/*Bron: HTML forms. (z.d.). https://www.w3schools.com/html/html_forms.asp*/
 main article:nth-of-type(2) {
 	width: 100%;
 }
 
-/*Confirm green*/
+/*Confirm */
 
 main article:nth-of-type(2) p {
 	color: green;
@@ -276,7 +286,7 @@ main select {
 
 
 /*FOOTER*/
-
+/*Bron: HTML forms. (z.d.). https://www.w3schools.com/html/html_forms.asp ,HTML form attributes. (z.d.). https://www.w3schools.com/html/html_forms_attributes.asp */
 footer {
 	background-color: var(--color-footer);
 	color: var(--color-textW);
@@ -337,7 +347,7 @@ input, textarea {
 	font-family:var(--p-font);
 }
 
-
+/*Bron: the Details Disclosure element - HTML: HyperText Markup Language | MDN. (2023, 7 juli). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details*/
 footer details {
 	padding: 1em;
     border: 0.5px solid;
@@ -377,8 +387,4 @@ footer details a {
 	flex-direction: column;
 	margin-top: 1em;
 }
-
-/*****************/
-/* CONTACTPAGINA */
-/*****************/
 

@@ -5,6 +5,7 @@
   box-sizing:border-box;  
 }
 
+/*Bron: Crossten Font Family | Download free fonts for desktop & webfonts. (z.d.). https://www.cufonfonts.com/font/crossten*/
 @font-face {
 	font-family: 'CrosstenSemiBold';
 	src: url('../fonts/CrosstenSemiBold.woff') format('woff');
@@ -17,14 +18,17 @@
 
 /*********************/
 /* CUSTOM PROPERTIES */
+/*Bron: Kevin Powell. (2017, 20 december). CSS Variables - an introduction to CSS custom properties [Video]. YouTube. https://www.youtube.com/watch?v=PHO6TBq_auI*/
 /*********************/
+
 :root {
 	/* startje */
 	--color-text: black;
 	--color-textW: white;
 	--color-background: white;
 	--color-footer: black;
-	--color-li-button: black; 
+	--color-li-button: black;
+	--color-li-button-hover: rgb(112,105,137);
 	--section-color: rgb(112,105,137);
 	--article-color:rgb(243,225,219);
 	--kopjes-font: 'CrosstenSemiBold';
@@ -33,6 +37,7 @@
 
 /* Hiding class, making content visible only to screen readers but not visually */
 /* "sr" meaning "screen-reader" */
+/* Bron studentassistent Quincy */
 
 .sr-only:not(:focus):not(:active) {
 	clip: rect(0 0 0 0); 
@@ -47,6 +52,11 @@
 /****************/
 /* JOUW STYLING */
 /****************/
+
+/*Bronnen: CSS guidelines. (2022, 1 september). https://cssguidelin.es/\
+  What the flexbox?! (z.d.). What The Flexbox?! https://flexbox.io/
+ CSS-Tricks. CSS-Tricks. https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/
+*/
 
 body {
 	text-align: center;
@@ -106,7 +116,7 @@ header {
 	list-style-type: none;
 }
 
-/* MENU open knop*/
+/* MENU open knop bron: T’ Hooft, S., [shooft]. (2023). https://codepen.io/shooft/pen/vYvEOQx. codepen. https://codepen.io/shooft/pen/eYbmRLZ */
 
 header > button {
 	order: -1;
@@ -115,7 +125,7 @@ header > button {
 	background-image: url();
 }
 
-/* SLUIT knop */
+/* MENU sluit knop bron: T’ Hooft, S., [shooft]. (2023). https://codepen.io/shooft/pen/vYvEOQx. codepen. https://codepen.io/shooft/pen/eYbmRLZ */
 
 nav button {
 	justify-self:start;
@@ -123,7 +133,7 @@ nav button {
     border: none;
 }
 
-/* als menu open is */
+/* MENU nav open bron: T’ Hooft, S., [shooft]. (2023). https://codepen.io/shooft/pen/vYvEOQx. codepen. https://codepen.io/shooft/pen/eYbmRLZ */
 nav.toonMenu {
 	translate:0% 0%;
   }
@@ -152,6 +162,7 @@ nav a {
 
 nav a:hover {
 	background-color: rgb(153,153,153);
+	transition: 0.3s;
 }
 
 nav summary {
@@ -189,8 +200,8 @@ main button {
 }
 
 
-
 /* EERSTE SECTION */
+/* Afbeeldingen, video en tekst bron: Fenty Beauty + Fenty Skin. (z.d.). Fenty Beauty by Rihanna | Beauty for all. https://fentybeauty.com/ */
 
 main > section:nth-of-type(1) {
 	height: 40em;
@@ -245,6 +256,13 @@ main > section:nth-of-type(1) article a {
     order: 4;
 }
 
+main > section:nth-of-type(1) article a:hover {
+	background-color: var(--color-text);
+	color: var(--color-textW);
+	transition: 0.3s;
+}
+
+
 /* TWEEDE SECTION */
 
 main > section:nth-of-type(2) {
@@ -275,6 +293,11 @@ main > section:nth-of-type(2) ul li {
     position: relative;
 }
 
+main > section:nth-of-type(2) ul li:hover {
+	border: .25em solid var(--color-li-button-hover);
+	transition: 0.3s;
+}
+
 main > section:nth-of-type(2) ul li article {
     text-align: start;
     position: relative;
@@ -300,6 +323,13 @@ main > section:nth-of-type(2) button:last-of-type {
     padding: 2em;
     border: none;
 }
+
+main > section:nth-of-type(2) button:last-of-type:hover {
+	background: var(--color-li-button-hover);
+    color: var(--color-textW);
+	transition: 0.3s;
+}
+
 
 main > section:nth-of-type(2) button img {
 	width: 150%;
@@ -343,6 +373,13 @@ main > section:nth-of-type(3) article a {
     margin-bottom: 1em;
 }
 
+main > section:nth-of-type(3) article a:hover {
+	background: var(--color-li-button-hover);
+	color: var(--color-textW);
+	transition: 0.3s;
+}
+
+
 
 /* EERSTE ARTICLE  */
 
@@ -362,6 +399,11 @@ main > article:nth-of-type(1) ul li {
     display: flex;
     flex-direction: column;
     width: 75%;
+}
+
+main > article:nth-of-type(1) ul li:hover {
+    border: .25em solid var(--color-li-button-hover);
+	transition: 0.3s;
 }
 
 /* DERDE SECTION  */
@@ -394,6 +436,11 @@ main > section:nth-of-type(4) ul li {
     position: relative;
 }
 
+main > section:nth-of-type(4) ul li:hover {
+	border: .25em solid var(--color-li-button-hover);
+	transition: 0.3s;
+}
+
 main > section:nth-of-type(4) ul li article {
     text-align: start;
     position: relative;
@@ -419,6 +466,12 @@ main > section:nth-of-type(4) button:last-of-type {
     padding: 2em;
     border: none;
 }
+
+main > section:nth-of-type(4) button:last-of-type:hover {
+	background: var(--color-li-button-hover);
+	transition: 0.3s;
+}
+
 
 main > section:nth-of-type(4) button img {
 	width: 150%;
@@ -448,8 +501,13 @@ main > article:nth-of-type(2) ul li {
     width: 75%;
 }
 
-/*FOOTER*/
+main > article:nth-of-type(2) ul li:hover {
+  border: .25em solid var(--color-li-button);
+  transition: 0.3s;
+}
 
+/*FOOTER*/
+/*Bron: HTML forms. (z.d.). https://www.w3schools.com/html/html_forms.asp ,HTML form attributes. (z.d.). https://www.w3schools.com/html/html_forms_attributes.asp */
 footer {
 	background-color: var(--color-footer);
 	color: var(--color-textW);
@@ -510,7 +568,7 @@ input, textarea {
 	font-family:var(--p-font);
 }
 
-
+/*Bron: the Details Disclosure element - HTML: HyperText Markup Language | MDN. (2023, 7 juli). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details*/
 footer details {
 	padding: 1em;
     border: 0.5px solid;
