@@ -247,6 +247,7 @@ Contactpagina deel 2:
 
   ### Dit was lastig/Is niet gelukt:
   Graag wilde ik Dark mode toevoegen aan mijn website. Ik had hiervoor veel custom properties gemaakt alleen uiteindelijk moest ik hiervoor nog meer toevoegen dan verwacht ook in mijn css. Uiteindelijk kostte het toch meer tijd dan verwacht dus dat heb ik niet meer kunnen doen.
+  
   <img src="readme-images/darkmode1.png" width="375px" alt="bummer">
   <img src="readme-images/darkmode2.png" width="375px" alt="bummer">
   <img src="readme-images/darkmode3.png" width="375px" alt="bummer">
@@ -255,10 +256,13 @@ Contactpagina deel 2:
   Ook wilde ik het mogelijk maken om een item toe te voegen aan een winkelmandje maar dat was dus ook niet meer mogelijk in verband met tijd.
 
   Ik wilde mijn video laten autoplayen op loop maar dat kan dus niet als je de pagina voor het eerst laad. Daarom heb ik dus een control panel toegevoegd en dit maakt het ook meteen wat gebruiksvriendelijker. Want nu kunnen de gebruikers eventueel terugspoelen of pauzeren wat er afgespeeld word. In plaats van dat de video als een achtergrond word gebruikt is het nu ook bedienbaar. Dus opzich pakt dat wel goed uit uiteindelijk.
+  
   <img src="readme-images/autoplay.png" width="375px" alt="bummer">
+  
   <img src="readme-images/vid.png" width="375px" alt="bummer">
   
 De cover werkt helaas niet je krijgt een zwart scherm maar als je op play drukt werkt de video wel. Video is ook te bedienen met toetsenbord.
+
   <img src="readme-images/vid-cover.png" width="375px" alt="bummer">
 
   Toch vind ik dat de website die ik gemaakt heb goed gelukt is. Ik heb gemerkt dat de oefeningen en de presentaties echt geholpen hebben met het opfrissen van code schrijven. Hierdoor kon ik een goede sprint maken en werd het code schrijven ook een stuk leuker. 
